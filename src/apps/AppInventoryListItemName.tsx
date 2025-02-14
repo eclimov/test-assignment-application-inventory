@@ -1,4 +1,5 @@
 import {Avatar} from "@mui/material";
+import styles from "./AppInventoryListItemName.module.scss";
 
 interface PropsType {
   name: string
@@ -8,7 +9,7 @@ interface PropsType {
 function AppInventoryListItemName({name, logoSrc}: PropsType) {
 
   return (
-    <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
+    <div className={styles.container}>
       <Avatar alt={`${name} logo`} src={logoSrc} />
       <span>{name}</span>
     </div>

@@ -1,10 +1,9 @@
 import './App.css'
-import AppInventory from "./app-inventory/AppInventory.tsx";
+import AppInventory from "./apps/AppInventory.tsx";
 
 function App() {
   return (
     <>
-      <h1>App Inventory</h1>
       <AppInventory />
     </>
   )

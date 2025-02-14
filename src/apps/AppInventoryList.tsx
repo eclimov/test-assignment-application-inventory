@@ -1,20 +1,10 @@
-import {DataGrid, GridColDef, GridRenderCellParams} from '@mui/x-data-grid';
+import {DataGrid, GridColDef} from '@mui/x-data-grid';
 import Paper from '@mui/material/Paper';
 import slackLogo from '/slack.png'
-import {Avatar} from "@mui/material";
-
-
-function GridNameCell(props: GridRenderCellParams,) {
-  return (
-    <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
-      <Avatar alt={`${props.value} logo`} src={props.row.logoSrc} />
-      <span>{props.value}</span>
-    </div>
-  );
-}
+import AppInventoryListItemName from "./AppInventoryListItemName.tsx";
 
 const columns: GridColDef[] = [
-  { field: 'name', headerName: 'Name', width: 140, sortable: true, renderCell: (params) => <GridNameCell {...params} /> },
+  { field: 'name', headerName: 'Name', width: 140, sortable: true, renderCell: (params) => <AppInventoryListItemName name={params.value} logoSrc={params.row.logoSrc} /> },
   { field: 'category', headerName: 'Category', width: 140, sortable: true },
   { field: 'connector', headerName: 'Connector', width: 140, renderCell: (params) => <>TBD</> },
 ];
@@ -33,7 +23,7 @@ const rows: AppInventoryItemType[] = [
 
 const paginationModel = { page: 0, pageSize: 25 };
 
-function AppInventory() {
+function AppInventoryList() {
 
   return (
     <Paper elevation={0}>
@@ -50,4 +40,4 @@ function AppInventory() {
   )
 }
 
-export default AppInventory
+export default AppInventoryList

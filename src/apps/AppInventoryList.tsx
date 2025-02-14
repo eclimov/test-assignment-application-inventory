@@ -6,9 +6,9 @@ import { useState } from 'react';
 import Sidebar from "./Sidebar.tsx";
 
 const columns: GridColDef[] = [
-  { field: 'name', headerName: 'Name', width: 140, sortable: true, renderCell: (params) => <AppInventoryListItemName name={params.value} logoSrc={params.row.logoSrc} /> },
-  { field: 'category', headerName: 'Category', width: 140, sortable: true },
-  { field: 'connector', headerName: 'Connector', width: 140, renderCell: (params) => <>TBD</> },
+  { field: 'name', headerName: 'Name', flex: 1, sortable: true, renderCell: (params) => <AppInventoryListItemName name={params.value} logoSrc={params.row.logoSrc} /> },
+  { field: 'category', headerName: 'Category', flex: 1, sortable: true },
+  { field: 'connector', headerName: 'Connector', flex: 1, renderCell: (params) => <>TBD</> },
 ];
 
 export interface AppInventoryItemType {

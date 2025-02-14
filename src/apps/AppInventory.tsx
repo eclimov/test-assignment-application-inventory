@@ -1,12 +1,13 @@
 import AppInventoryList from "./AppInventoryList.tsx";
+import styles from "./AppInventory.module.scss";
 
 function AppInventory() {
 
   return (
-    <>
-      <h1>App Inventory</h1>
+    <div className={styles.container}>
+      <h3 className={styles.heading}>App Inventory</h3>
       <AppInventoryList />
-    </>
+    </div>
   )
 }
 

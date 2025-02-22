@@ -1,8 +1,8 @@
 # Test Assignment - Application Inventory 
-This is a React application, created from zero as a practical assignment during an interview. As part of the task, I was asked to turn on a camera and share my screen.  
+This is a React application, created from zero as a practical assignment during an interview. As a part of the task, I was asked to turn on camera and share my screen.  
 **Time limit:** 3 hours
 ## Requirements
-- Develop a screen (front-end application) using TypeScript React that looks and behaves like the App Inventory on the following mockups:  
+- Develop a screen (front-end application) using **React** with **TypeScript** that looks and behaves like the App Inventory on the following mockups:  
   <img src="public/screenshots/app-inventory-expected-view.png" alt="App Inventory Expected - View" width="150"/>
   <img src="public/screenshots/app-inventory-expected-sidebar.png" alt="App Inventory Expected - Sidebar" width="150"/>
 - Create a table that will include the following columns:
